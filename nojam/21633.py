@@ -1,0 +1,1 @@
+print(min(2000,max(25+int(input())/100,100)))

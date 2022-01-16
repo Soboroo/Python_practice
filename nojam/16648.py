@@ -1,0 +1,5 @@
+a,b=map(int,input().split())
+x=max(0,100-b-80)
+r=a/(100-b-x+x*2)
+z=max(0,b-20)
+print(z*r+(b-z)*r*2)
