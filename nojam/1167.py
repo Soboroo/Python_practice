@@ -21,7 +21,7 @@ def dfs(node, distance, visited):
         max_distance = distance
         max_distance_node = node
     for i in range(len(graph[node])):
-        if not visited[graph[node][i][0]]:
+        if not visited[graph[node][i][0]]: # in 연산자 O(n) vs list 참조 O(1)
             visited[graph[node][i][0]] = True
             dfs(graph[node][i][0], distance + graph[node][i][1], visited)
 
